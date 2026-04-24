@@ -1061,17 +1061,16 @@ function loadFile(file, which) {
 const INV_FIELDS = [
   { key: 'inv_date', label: 'Tanggal Invoice', hints: ['date','tanggal','tgl','invoice date','inv date'] },
   { key: 'inv_no', label: 'No. Invoice', hints: ['no','number','nomor','invoice no','inv no','faktur'] },
-  { key: 'customer', label: 'Customer / Nama', hints: ['customer','pelanggan','nama','name','client'] },
-  { key: 'inv_amt', label: 'Nilai Invoice (Total)', hints: ['amount','jumlah','total','nilai','grand total','subtotal','invoice amount'] },
+  { key: 'customer', label: 'Pelanngan / Nama / Mitra', hints: ['customer','pelanggan','nama','name','client','business','partner'] },
+  { key: 'inv_amt', label: 'Nilai Invoice (Total)', hints: ['amount','jumlah','total','nilai','grand total','subtotal','invoice amount','netto'] },
   { key: 'inv_paid', label: 'Sudah Dibayar', hints: ['paid','bayar','terbayar','payment','amount paid','applied'] },
-  { key: 'inv_balance', label: 'Saldo / Sisa', hints: ['balance','saldo','outstanding','remaining','sisa','due'] },
-  { key: 'inv_status', label: 'Status', hints: ['status','state'] },
+  { key: 'inv_balance', label: 'Saldo / Sisa', hints: ['balance','saldo','outstanding','remaining','sisa','due','netto'] }
 ];
 
 const PAY_FIELDS = [
   { key: 'pay_date', label: 'Tanggal Pembayaran', hints: ['date','tanggal','tgl','payment date','pay date'] },
   { key: 'pay_no', label: 'No. Pembayaran', hints: ['no','number','nomor','payment no','receipt','kwitansi'] },
-  { key: 'pay_customer', label: 'Customer / Nama', hints: ['customer','pelanggan','nama','name','client'] },
+  { key: 'pay_customer', label: 'Pelanngan / Nama / Mitra', hints: ['customer','pelanggan','nama','name','client','business','partner'] },
   { key: 'pay_amt', label: 'Nilai Pembayaran', hints: ['amount','jumlah','total','nilai','payment amount','bayar'] },
   { key: 'pay_inv_ref', label: 'Ref. Invoice (opsional)', hints: ['invoice','faktur','ref','applied','memo'] },
 ];
